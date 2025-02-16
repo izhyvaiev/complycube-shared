@@ -51,11 +51,11 @@ export class IndividualClientPayloadDto {
   dateOfBirth: string
 
   @ApiProperty({ enum: Object.values(CountryCode)})
-  @IsEnum(CountryCode)
+  @IsEnum(CountryCode, { message: 'Nationality is required' })
   nationality: string
 
   @ApiProperty({ enum: Object.values(CountryCode)})
-  @IsEnum(CountryCode)
+  @IsEnum(CountryCode, { message: 'Country of birth is required' })
   birthCountry: string
 
   @ApiProperty()

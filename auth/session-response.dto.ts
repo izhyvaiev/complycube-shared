@@ -12,7 +12,7 @@ export class SessionResponseDto {
 
 	@ApiResponseProperty()
 	@Expose()
-	expires_in: number
+	expires_at: string
 
 	@ApiResponseProperty()
 	@Expose()
