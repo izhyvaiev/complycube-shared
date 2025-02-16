@@ -59,4 +59,8 @@ export class IndividualClientDto {
   @ApiResponseProperty()
   @Expose()
   taxIdentificationNumber: string | null;
+
+  @ApiResponseProperty()
+  @Expose()
+  sessionId: string;
 }
