@@ -6,7 +6,7 @@ import { VerificationOutcome } from '@app/complycube-shared/database/verificatio
 export class VerificationStatusDto {
   @ApiResponseProperty()
   @Expose()
-  id: string;
+  id: number;
 
   @ApiResponseProperty({ enum: Object.values(VerificationType) })
   @Expose()
@@ -19,4 +19,8 @@ export class VerificationStatusDto {
   @ApiResponseProperty({ enum: Object.values(VerificationOutcome) })
   @Expose()
   outcome: VerificationOutcome | null
+
+  @ApiResponseProperty()
+  @Expose()
+  sessionId: string
 }
